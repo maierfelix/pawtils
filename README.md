@@ -31,3 +31,6 @@ Browser installation:
 
 ### Inspired by:
  - [banotils](https://github.com/maierfelix/banotils)
+
+### Donations:
+``paw_3ximawmxxkrdkw38r9eprudmekw95hy3xubohs1j3j6nphid6too16uz3sgb``
