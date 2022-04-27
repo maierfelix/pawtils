@@ -1,0 +1,54 @@
+{
+  "name": "pawtils",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "docs": "typedoc src/index.ts",
+    "build": "rollup -c",
+    "watch": "rollup -cw"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^21.0.3",
+    "@rollup/plugin-node-resolve": "^13.1.3",
+    "@rollup/plugin-url": "^6.1.0",
+    "@typescript-eslint/eslint-plugin": "^5.17.0",
+    "@typescript-eslint/parser": "^5.17.0",
+    "eslint": "^8.12.0",
+    "eslint-plugin-tsdoc": "^0.2.14",
+    "rollup": "^2.70.1",
+    "rollup-plugin-clear": "^2.0.7",
+    "rollup-plugin-glslify": "^1.2.1",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.31.2",
+    "tslib": "^2.3.1",
+    "typedoc": "^0.22.13",
+    "typescript": "^4.6.3"
+  },
+  "keywords": [
+    "paw",
+    "nano",
+    "crypto",
+    "wallet"
+  ],
+  "author": "Felix Maier",
+  "license": "MIT",
+  "dependencies": {
+    "blakejs": "^1.2.1",
+    "cross-fetch": "^3.1.5",
+    "minimal-qr-code": "^1.3.1"
+  },
+  "description": "This repository contains several utils to work with the cryptocurrency [Paw](https://paw.digital/) inside the browser.",
+  "directories": {
+    "doc": "docs",
+    "example": "example"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maierfelix/pawtils.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maierfelix/pawtils/issues"
+  },
+  "homepage": "https://github.com/maierfelix/pawtils#readme"
+}
