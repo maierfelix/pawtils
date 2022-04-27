@@ -30,8 +30,8 @@
 <div id="wallet-mnemonic"></div>
 <h3>QR Code:</h3>
 <div id="wallet-qr-code"></div>
-<h3>Monkey:</h3>
-<div id="wallet-monkey"></div>
+<h3>Pawnimal:</h3>
+<div id="wallet-pawnimal"></div>
 <hr>
 
 <h1>General:</h1>
@@ -91,12 +91,12 @@ async function onUpdateWallet(address, mnemonic, seed, publicKey, privateKey) {
   qrCode.style.imageRendering = "pixelated";
   $(`#wallet-qr-code`).innerHTML = "";
   $(`#wallet-qr-code`).appendChild(qrCode);
-  // Append monkey
-  const monkeyImage = new Image();
-  monkeyImage.width = 128;
-  monkeyImage.src = `https://pawnimal.paw.digital/api/v1/nano?address=${address}`;
-  $(`#wallet-monkey`).innerHTML = "";
-  $(`#wallet-monkey`).appendChild(monkeyImage);
+  // Append pawnimal
+  const pawnimalImage = new Image();
+  pawnimalImage.width = 128;
+  pawnimalImage.src = `https://pawnimal.paw.digital/api/v1/nano?address=${address}`;
+  $(`#wallet-pawnimal`).innerHTML = "";
+  $(`#wallet-pawnimal`).appendChild(pawnimalImage);
 }
 
 async function onGenerateWallet() {
