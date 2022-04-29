@@ -61,7 +61,7 @@
 <script>
 function $(query) { return document.querySelector(query); }
 
-// Use Kalium representative by default
+// Use Genesis representative by default
 const REPRESENTATIVE = `paw_3yyz45ztct47x4ai3onfbkkuorzpdtnb15cmnhu8fhosnxrgci8c5xp8xbf6`;
 
 async function generateRandomWallet() {
@@ -236,7 +236,6 @@ async function onWithdrawWallet() {
     script.type = "text/javascript";
     script.onload = async(e) => {
       await pawtils.setAPIURL(`https://calm-waters-22733.herokuapp.com/https://rpc2.paw.digital/`);
-      // Use Kalium API by default
       //await pawtils.setAPIURL(`https://rpc2.paw.digital/`);
       // Generate a random wallet automatically
       $(`#generate-wallet`).click();
