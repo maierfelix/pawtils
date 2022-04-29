@@ -235,8 +235,7 @@ async function onWithdrawWallet() {
     const script = document.createElement("script");
     script.type = "text/javascript";
     script.onload = async(e) => {
-      await pawtils.setAPIURL(`https://calm-waters-22733.herokuapp.com/https://rpc2.paw.digital/`);
-      //await pawtils.setAPIURL(`https://rpc2.paw.digital/`);
+      await pawtils.setAPIURL(`https://rpc2.paw.digital/`);
       // Generate a random wallet automatically
       $(`#generate-wallet`).click();
     };
