@@ -1,6 +1,6 @@
 # pawtils
 
-This repository contains several utils to work with the cryptocurrency [Paw](https://paw.digital/) inside the browser.
+This repository contains several utils to work with the cryptocurrency [Paw](https://paw.digital/) inside the Browser and Node.
 
 ### Demo:
  - [Browser Wallet](https://maierfelix.github.io/pawtils/example/wallet.html)
