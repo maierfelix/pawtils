@@ -60,7 +60,7 @@ Browser installation:
 const pawtils = require("pawtils");
 const crypto = require("crypto").webcrypto;
 
-(async () => {
+(async() => {
 
   // Set API endpoint
   await pawtils.setAPIURL(`https://rpc2.paw.digital/`);
