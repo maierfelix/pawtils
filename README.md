@@ -29,5 +29,56 @@ Browser installation:
  - Proof-of-Work generation (CPU, GPU or NODE based)
  - AES PBKDF2 encryption/decryption
 
+### Browser Example:
+````html
+<script src="https://unpkg.com/pawtils/dist/index.iife.min.js"></script>
+
+<script>
+(async() => {
+
+  // Set API endpoint
+  await pawtils.setAPIURL(`https://rpc2.paw.digital/`);
+
+  // Generate random wallet
+  const walletSeed = crypto.getRandomValues(new Uint8Array(32));
+  const walletPrivateKey = pawtils.getPrivateKey(walletSeed);
+  const walletPublicKey = pawtils.getPublicKey(walletPrivateKey);
+  const walletAddress = pawtils.getAccountAddress(walletPublicKey);
+
+  // Print wallet information
+  console.log("Seed:", pawtils.bytesToHex(walletSeed));
+  console.log("Address:", walletAddress);
+  console.log("Private key:", pawtils.bytesToHex(walletPrivateKey));
+  console.log("Public key:", pawtils.bytesToHex(walletPublicKey));
+
+})();
+</script>
+````
+
+### Node Example:
+````js
+const pawtils = require("pawtils");
+const crypto = require("crypto").webcrypto;
+
+(async () => {
+
+  // Set API endpoint
+  await pawtils.setAPIURL(`https://rpc2.paw.digital/`);
+
+  // Generate random wallet
+  const walletSeed = crypto.getRandomValues(new Uint8Array(32));
+  const walletPrivateKey = pawtils.getPrivateKey(walletSeed);
+  const walletPublicKey = pawtils.getPublicKey(walletPrivateKey);
+  const walletAddress = pawtils.getAccountAddress(walletPublicKey);
+
+  // Print wallet information
+  console.log("Seed:", pawtils.bytesToHex(walletSeed));
+  console.log("Address:", walletAddress);
+  console.log("Private key:", pawtils.bytesToHex(walletPrivateKey));
+  console.log("Public key:", pawtils.bytesToHex(walletPublicKey));
+
+})();
+````
+
 ### Inspired by:
  - [banotils](https://github.com/maierfelix/banotils)
